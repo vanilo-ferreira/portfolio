@@ -94,6 +94,61 @@ function App() {
 
           </div>
         </section>
+
+        <section>
+          <h2>Projetos</h2>
+
+          <div>
+
+            <div>
+              <div>Imagem do projeto</div>
+              <div>
+                <p>Título do Projeto</p>
+                <p>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+
+            <div>
+              <div>Imagem do projeto</div>
+              <div>
+                <p>Título do Projeto</p>
+                <p>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+
+            <div>
+              <div>Imagem do projeto</div>
+              <div>
+                <p>Título do Projeto</p>
+                <p>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+
+            <div>
+              <div>Imagem do projeto</div>
+              <div>
+                <p>Título do Projeto</p>
+                <p>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+
+            <div>
+              <div>Imagem do projeto</div>
+              <div>
+                <p>Título do Projeto</p>
+                <p>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+
+            <div>
+              <div>Imagem do projeto</div>
+              <div>
+                <p>Título do Projeto</p>
+                <p>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
