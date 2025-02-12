@@ -15,6 +15,9 @@ import TailwindIcon from './assets/tailwindIcon.svg';
 import ReactIcon from './assets/reactIcon.svg';
 import NextIcon from './assets/nextjsIcon.svg';
 
+import EmailIcon2 from './assets/emailIcon2.svg';
+import PhoneIcon2 from './assets/phoneIcon2.svg';
+
 
 
 function App() {
@@ -67,7 +70,7 @@ function App() {
 
             <div>
               <div>
-                <img src={ProfileIcon} alt='Waving cartoon' />
+                <img src={ProfileIcon} alt='Profile Icon' />
               </div>
               <div>
                 <h4>Meu Nome</h4>
@@ -77,7 +80,7 @@ function App() {
 
             <div>
               <div>
-                <img src={EmailIcon} alt='Waving cartoon' />
+                <img src={EmailIcon} alt='E-mail Icon' />
               </div>
               <div>
                 <h4>E-mail</h4>
@@ -87,7 +90,7 @@ function App() {
 
             <div>
               <div>
-                <img src={InstagramIcon} alt='Waving cartoon' />
+                <img src={InstagramIcon} alt='Instagram Icon' />
               </div>
               <div>
                 <h4>Instagram</h4>
@@ -97,7 +100,7 @@ function App() {
 
             <div>
               <div>
-                <img src={PhoneIcon} alt='Waving cartoon' />
+                <img src={PhoneIcon} alt='Phone Icon' />
               </div>
               <div>
                 <h4>Telefone</h4>
@@ -218,6 +221,38 @@ function App() {
             <div>
               <img src={NextIcon} alt='Next.js Logo' />
               <p>NEXT.js</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <div>
+              <p>Entrar em contato</p>
+              <p>
+                Sou muito acessível e adoraria falar com você. Fique à vontade para ligar, me envie um e-mail.
+                Siga-me nas redes sociais ou simplesmente preencha o formulário de consulta.
+              </p>
+
+              <div>
+                <img src={PhoneIcon2} alt='Phone Icon' />
+                <p>(71) 9 9309-2086</p>
+              </div>
+
+              <div>
+                <img src={EmailIcon2} alt='E-mail Icon' />
+                <p>vanilo.ferreira03@gmail.com</p>
+              </div>
+            </div>
+            <div>
+              <p>Me mande uma mensagem</p>
+              <form>
+                <input type="text" placeholder='Nome'/>
+                <input type="text" placeholder='E-mail'/>
+                <input type="text" placeholder='Assunto'/>
+                <input type="text" placeholder='Sua mensagem'/>
+                <button>Enviar mensagem</button>
+              </form>
             </div>
           </div>
         </section>
