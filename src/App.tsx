@@ -4,6 +4,10 @@ import EmailIcon from './assets/emailIcon.svg'
 import InstagramIcon from './assets/instagramIcon.svg'
 import PhoneIcon from './assets/phoneIcon.svg'
 
+import CodeIcon from './assets/codeIcon.svg'
+import FigmaIcon from './assets/figmaIcon.svg'
+import TabletIcon from './assets/tabletIcon.svg'
+
 function App() {
 
   return (
@@ -149,6 +153,28 @@ function App() {
             </div>
           </div>
         </section>
+
+<section>
+  <h2>Serviços</h2>
+  <div>
+
+<div>
+  <img src={FigmaIcon} alt='FigmaIcon' />
+  <p>Criação <br/>de sites</p>
+</div>
+
+<div>
+  <img src={CodeIcon} alt='Code Icon' />
+  <p>Criação <br/>de API</p>
+</div>
+
+<div>
+  <img src={TabletIcon} alt='Tablet Icon' />
+  <p>Sites <br/>responsivos</p>
+</div>
+
+  </div>
+</section>
       </main>
     </>
   )
