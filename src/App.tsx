@@ -1,12 +1,21 @@
-import Image1 from './assets/image1.png'
-import ProfileIcon from './assets/profileIcon.svg'
-import EmailIcon from './assets/emailIcon.svg'
-import InstagramIcon from './assets/instagramIcon.svg'
-import PhoneIcon from './assets/phoneIcon.svg'
+import Image1 from './assets/image1.png';
+import ProfileIcon from './assets/profileIcon.svg';
+import EmailIcon from './assets/emailIcon.svg';
+import InstagramIcon from './assets/instagramIcon.svg';
+import PhoneIcon from './assets/phoneIcon.svg';
 
-import CodeIcon from './assets/codeIcon.svg'
-import FigmaIcon from './assets/figmaIcon.svg'
-import TabletIcon from './assets/tabletIcon.svg'
+import CodeIcon from './assets/codeIcon.svg';
+import FigmaIcon from './assets/figmaIcon.svg';
+import TabletIcon from './assets/tabletIcon.svg';
+
+import HTMLIcon from './assets/htmlIcon.svg';
+import CSSIcon from './assets/codeIcon.svg';
+import JSIcon from './assets/jsIcon.svg';
+import TailwindIcon from './assets/tailwindIcon.svg';
+import ReactIcon from './assets/reactIcon.svg';
+import NextIcon from './assets/nextjsIcon.svg';
+
+
 
 function App() {
 
@@ -154,27 +163,64 @@ function App() {
           </div>
         </section>
 
-<section>
-  <h2>Serviços</h2>
-  <div>
+        <section>
+          <h2>Serviços</h2>
+          <div>
 
-<div>
-  <img src={FigmaIcon} alt='FigmaIcon' />
-  <p>Criação <br/>de sites</p>
-</div>
+            <div>
+              <img src={FigmaIcon} alt='FigmaIcon' />
+              <p>Criação <br />de sites</p>
+            </div>
 
-<div>
-  <img src={CodeIcon} alt='Code Icon' />
-  <p>Criação <br/>de API</p>
-</div>
+            <div>
+              <img src={CodeIcon} alt='Code Icon' />
+              <p>Criação <br />de API</p>
+            </div>
 
-<div>
-  <img src={TabletIcon} alt='Tablet Icon' />
-  <p>Sites <br/>responsivos</p>
-</div>
+            <div>
+              <img src={TabletIcon} alt='Tablet Icon' />
+              <p>Sites <br />responsivos</p>
+            </div>
 
-  </div>
-</section>
+          </div>
+        </section>
+
+        <section>
+          <h2>Minhas skills</h2>
+
+          <div>
+
+            <div>
+              <img src={HTMLIcon} alt='HTML Logo' />
+              <p>HTML</p>
+            </div>
+
+            <div>
+              <img src={CSSIcon} alt='CSS Logo' />
+              <p>CSS</p>
+            </div>
+
+            <div>
+              <img src={JSIcon} alt='Javascript Logo' />
+              <p>JAVASCRIPT</p>
+            </div>
+
+            <div>
+              <img src={TailwindIcon} alt='Tailwind Logo' />
+              <p>TAILWIND</p>
+            </div>
+
+            <div>
+              <img src={ReactIcon} alt='React Logo' />
+              <p>REACT</p>
+            </div>
+
+            <div>
+              <img src={NextIcon} alt='Next.js Logo' />
+              <p>NEXT.js</p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
