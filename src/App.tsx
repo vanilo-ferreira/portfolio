@@ -57,7 +57,7 @@ function App() {
 
         <section id='aboutMe'>
           <div>
-            <h2>Sobre mim</h2>
+            <h2 className='subtitles'>Sobre mim</h2>
 
             <p className='summary'>
               Desenvolvedor full-stack com experiência em React, Node.js, Angular e TypeScript,
@@ -120,57 +120,58 @@ function App() {
         </section>
 
         <section id='projects'>
-          <h2>Projetos</h2>
+          <h2 className='subtitles'>Projetos</h2>
 
-          <div>
+          <div className='projectCards'>
 
-            <div>
-              <div>Imagem do projeto</div>
-              <div>
-                <p>Título do Projeto</p>
-                <p>Tecnologias: HTML, CSS e JS.</p>
+          <div className='card'>
+              <div className='cardImage'></div>
+              <div className='cardDetails'>
+                <p className='cardTitle'>Título do Projeto</p>
+                <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
+              </div>
+            </div>
+            
+            <div className='card'>
+              <div className='cardImage'></div>
+              <div className='cardDetails'>
+                <p className='cardTitle'>Título do Projeto</p>
+                <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
               </div>
             </div>
 
-            <div>
-              <div>Imagem do projeto</div>
-              <div>
-                <p>Título do Projeto</p>
-                <p>Tecnologias: HTML, CSS e JS.</p>
+            <div className='card'>
+              <div className='cardImage'></div>
+              <div className='cardDetails'>
+                <p className='cardTitle'>Título do Projeto</p>
+                <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
               </div>
             </div>
 
-            <div>
-              <div>Imagem do projeto</div>
-              <div>
-                <p>Título do Projeto</p>
-                <p>Tecnologias: HTML, CSS e JS.</p>
+            <div className='card'>
+              <div className='cardImage'></div>
+              <div className='cardDetails'>
+                <p className='cardTitle'>Título do Projeto</p>
+                <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
               </div>
             </div>
 
-            <div>
-              <div>Imagem do projeto</div>
-              <div>
-                <p>Título do Projeto</p>
-                <p>Tecnologias: HTML, CSS e JS.</p>
+            <div className='card'>
+              <div className='cardImage'></div>
+              <div className='cardDetails'>
+                <p className='cardTitle'>Título do Projeto</p>
+                <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
               </div>
             </div>
 
-            <div>
-              <div>Imagem do projeto</div>
-              <div>
-                <p>Título do Projeto</p>
-                <p>Tecnologias: HTML, CSS e JS.</p>
+            <div className='card'>
+              <div className='cardImage'></div>
+              <div className='cardDetails'>
+                <p className='cardTitle'>Título do Projeto</p>
+                <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
               </div>
             </div>
 
-            <div>
-              <div>Imagem do projeto</div>
-              <div>
-                <p>Título do Projeto</p>
-                <p>Tecnologias: HTML, CSS e JS.</p>
-              </div>
-            </div>
           </div>
         </section>
 
