@@ -11,7 +11,7 @@ import FigmaIcon from './assets/figmaIcon.svg';
 import TabletIcon from './assets/tabletIcon.svg';
 
 import HTMLIcon from './assets/htmlIcon.svg';
-import CSSIcon from './assets/codeIcon.svg';
+import CSSIcon from './assets/cssIcon.svg';
 import JSIcon from './assets/jsIcon.svg';
 import TailwindIcon from './assets/tailwindIcon.svg';
 import ReactIcon from './assets/reactIcon.svg';
@@ -199,36 +199,36 @@ function App() {
         </section>
 
         <section id='mySkills'>
-          <h2>Minhas skills</h2>
+          <h2 className='subtitles'>Minhas skills</h2>
 
-          <div>
+          <div className='containerSkills'>
 
-            <div>
+            <div className='skillCard'>
               <img src={HTMLIcon} alt='HTML Logo' />
               <p>HTML</p>
             </div>
 
-            <div>
+            <div className='skillCard'>
               <img src={CSSIcon} alt='CSS Logo' />
               <p>CSS</p>
             </div>
 
-            <div>
+            <div className='skillCard'>
               <img src={JSIcon} alt='Javascript Logo' />
               <p>JAVASCRIPT</p>
             </div>
 
-            <div>
+            <div className='skillCard'>
               <img src={TailwindIcon} alt='Tailwind Logo' />
               <p>TAILWIND</p>
             </div>
 
-            <div>
+            <div className='skillCard'>
               <img src={ReactIcon} alt='React Logo' />
               <p>REACT</p>
             </div>
 
-            <div>
+            <div className='skillCard'>
               <img src={NextIcon} alt='Next.js Logo' />
               <p>NEXT.js</p>
             </div>
