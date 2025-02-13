@@ -59,52 +59,58 @@ function App() {
           <div>
             <h2>Sobre mim</h2>
 
-            <p>
-              Recém-formado em Sistemas de Informação com conhecimentos em linguagens de
-              programação, banco de dados e desenvolvimento web. Habilidade em resolução de
-              problemas e aprendizagem rápida.
-              Busco oportunidades para aplicar meu conhecimento no intuito de me desenvolver
-              profissionalmente, enquanto auxilio no crescimento da empresa.
+            <p className='summary'>
+              Desenvolvedor full-stack com experiência em React, Node.js, Angular e TypeScript,
+              além de conhecimentos em HTML, CSS, Python, Styled Components e Git. Atuação em
+              projetos desafiadores, incluindo chatbots, e-commerce e aplicações web escaláveis,
+              utilizando metodologias ágeis e boas práticas de desenvolvimento.
+            </p>
+
+            <p className='summary'>
+              Meu bom relacionamento interpessoal, comunicação e flexibilidade me levaram a
+              participar do projeto voluntário SouJunior, onde contribuo para o desenvolvimento de projetos
+              open source voltados à comunidade dev. Essa experiência fortalece minhas
+              habilidades em trabalho em equipe, inovação e mentoria técnica.
             </p>
           </div>
 
-          <div>
+          <div className='highlight'>
 
-            <div>
-              <div>
+            <div className='featuredCards'>
+              <div className='iconInHighlights'>
                 <img src={ProfileIcon} alt='Profile Icon' />
               </div>
-              <div>
+              <div className='information'>
                 <h4>Meu Nome</h4>
                 <p>Vanilo Ferreira</p>
               </div>
             </div>
 
-            <div>
-              <div>
+            <div className='featuredCards'>
+              <div className='iconInHighlights'>
                 <img src={EmailIcon} alt='E-mail Icon' />
               </div>
-              <div>
+              <div className='information'>
                 <h4>E-mail</h4>
                 <p>vanilo.ferreira03@gmail.com</p>
               </div>
             </div>
 
-            <div>
-              <div>
+            <div className='featuredCards'>
+              <div className='iconInHighlights'>
                 <img src={InstagramIcon} alt='Instagram Icon' />
               </div>
-              <div>
+              <div className='information'>
                 <h4>Instagram</h4>
                 <p>vsf_erreira</p>
               </div>
             </div>
 
-            <div>
-              <div>
+            <div className='featuredCards'>
+              <div className='iconInHighlights'>
                 <img src={PhoneIcon} alt='Phone Icon' />
               </div>
-              <div>
+              <div className='information'>
                 <h4>Telefone</h4>
                 <p>(71) 9 9309-2086</p>
               </div>
