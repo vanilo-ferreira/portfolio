@@ -39,19 +39,19 @@ function App() {
         </nav>
       </header>
       <main>
-        <section>
+        <section className='profile'>
           <div>
             <h1>Olá, eu sou o <br />Vanilo Ferreira :)</h1>
-            <p>Desenvolvedor Front-End</p>
+            <p>Desenvolvedor <span>Front-End</span></p>
 
             <div>
-              <button>Download CV</button>
-              <button>Entrar em contato</button>
+              <button className='CVButton'>Download CV</button>
+              <button className='ContactButton'>Entrar em contato</button>
             </div>
+          </div>
 
-            <div>
-              <img src={Image1} alt='Waving cartoon' />
-            </div>
+          <div>
+            <img className='imageProfile' src={Image1} alt='Waving cartoon' />
           </div>
         </section>
 
@@ -249,10 +249,10 @@ function App() {
             <div>
               <p>Me mande uma mensagem</p>
               <form>
-                <input type='text' placeholder='Nome'/>
-                <input type='text' placeholder='E-mail'/>
-                <input type='text' placeholder='Assunto'/>
-                <input type='text' placeholder='Sua mensagem'/>
+                <input type='text' placeholder='Nome' />
+                <input type='text' placeholder='E-mail' />
+                <input type='text' placeholder='Assunto' />
+                <input type='text' placeholder='Sua mensagem' />
                 <button>Enviar mensagem</button>
               </form>
             </div>

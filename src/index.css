@@ -37,3 +37,47 @@ nav a {
   text-decoration: none;
   color: #F9F9F9;
 }
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.profile h1{
+  font-size: 36px;
+  color: #F9F9F9;
+}
+
+.profile p{
+  font-size: 18px;
+  color: #828282;
+}
+
+.profile span{
+  color: #00DF5E;
+}
+
+.profile button{
+  width: 143px;
+  height: 42px;
+  font-size: 14px;
+}
+
+.CVButton {
+  background-color:#00DF5E;
+  margin-right: 10px;
+}
+
+.ContactButton {
+  background-color:transparent;
+  margin-right: 10px;
+  border: 1px solid #333333;
+  color: #F9F9F9;
+}
+
+
+.imageProfile{
+  width:350px;
+}
