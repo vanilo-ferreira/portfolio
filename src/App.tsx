@@ -55,7 +55,7 @@ function App() {
           </div>
         </section>
 
-        <section id='aboutMe'>
+        <section  className="sections" id='aboutMe'>
           <div>
             <h2 className='subtitles'>Sobre mim</h2>
 
@@ -131,7 +131,7 @@ function App() {
                 <p className='stacks'>Tecnologias: HTML, CSS e JS.</p>
               </div>
             </div>
-            
+
             <div className='card'>
               <div className='cardImage'></div>
               <div className='cardDetails'>
@@ -176,20 +176,21 @@ function App() {
         </section>
 
         <section id='services'>
-          <h2>Serviços</h2>
-          <div>
+          <h2 className='subtitles'>Serviços</h2>
 
-            <div>
+          <div className='containerServices'>
+
+            <div className='serviceCard'>
               <img src={FigmaIcon} alt='FigmaIcon' />
               <p>Criação <br />de sites</p>
             </div>
 
-            <div>
+            <div className='serviceCard'>
               <img src={CodeIcon} alt='Code Icon' />
               <p>Criação <br />de API</p>
             </div>
 
-            <div>
+            <div className='serviceCard'>
               <img src={TabletIcon} alt='Tablet Icon' />
               <p>Sites <br />responsivos</p>
             </div>
