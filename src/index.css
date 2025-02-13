@@ -1,6 +1,9 @@
 :root {
   font-family: "DM Sans", serif;
   background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -9,4 +12,26 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  max-width: 1140px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  color: #F9F9F9;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav{
+  display: flex;
+}
+
+nav a {
+  font-size: 18px;
+  margin: 20px
 }

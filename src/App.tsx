@@ -1,3 +1,5 @@
+import './index.css';
+
 import Image1 from './assets/image1.png';
 import ProfileIcon from './assets/profileIcon.svg';
 import EmailIcon from './assets/emailIcon.svg';
@@ -26,14 +28,14 @@ function App() {
     <>
       <header>
         <div>
-          <h1>Portfólio</h1>
+          <h1 className='logo'>Portfólio</h1>
         </div>
 
         <nav>
-          <p>Sobre mim</p>
-          <p>Projetos</p>
-          <p>Serviços</p>
-          <p>Minhas skills</p>
+          <a href='#aboutMe'>Sobre mim</a>
+          <a href='#projects'>Projetos</a>
+          <a href='#services'>Serviços</a>
+          <a href='#mySkills'>Minhas skills</a>
         </nav>
       </header>
       <main>
@@ -53,7 +55,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section id='aboutMe'>
           <div>
             <h2>Sobre mim</h2>
 
@@ -111,7 +113,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section id='projects'>
           <h2>Projetos</h2>
 
           <div>
@@ -166,7 +168,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section id='services'>
           <h2>Serviços</h2>
           <div>
 
@@ -188,7 +190,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section id='mySkills'>
           <h2>Minhas skills</h2>
 
           <div>
@@ -247,10 +249,10 @@ function App() {
             <div>
               <p>Me mande uma mensagem</p>
               <form>
-                <input type="text" placeholder='Nome'/>
-                <input type="text" placeholder='E-mail'/>
-                <input type="text" placeholder='Assunto'/>
-                <input type="text" placeholder='Sua mensagem'/>
+                <input type='text' placeholder='Nome'/>
+                <input type='text' placeholder='E-mail'/>
+                <input type='text' placeholder='Assunto'/>
+                <input type='text' placeholder='Sua mensagem'/>
                 <button>Enviar mensagem</button>
               </form>
             </div>
