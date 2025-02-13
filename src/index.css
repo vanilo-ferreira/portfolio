@@ -33,5 +33,7 @@ nav{
 
 nav a {
   font-size: 18px;
-  margin: 20px
+  margin: 20px;
+  text-decoration: none;
+  color: #F9F9F9;
 }
