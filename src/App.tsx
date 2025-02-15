@@ -46,7 +46,9 @@ function App() {
 
             <div>
               <button className='CVButton'>Download CV</button>
-              <button className='ContactButton'>Entrar em contato</button>
+              <a href='#contact'>
+                <button className='ContactButton'>Entrar em contato</button>
+              </a>
             </div>
           </div>
 
@@ -235,7 +237,7 @@ function App() {
           </div>
         </section>
 
-        <section className='contact'>
+        <section className='contact' id='contact'>
           <div className='containerContact'>
             <div className='containerInformation'>
               <p className='subtitleContact'>Entrar em contato</p>

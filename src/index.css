@@ -353,18 +353,18 @@ nav a {
 }
 
 .form input {
-  width: 340px;
+  width: 320px;
   height: 40px;
   background-color: #707070;
   border-radius: 10px ;
   margin: 10px 0;
   border: none;
+  padding-left: 20px;
 }
 
 .form input::-webkit-input-placeholder {
   color: white;
   font-size: 15px;
-  padding-left: 20px;
 }
 
 #yourMessage {
