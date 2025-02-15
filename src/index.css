@@ -259,6 +259,10 @@ nav a:hover {
   padding: 30px;
 }
 
+.serviceCard:hover{
+  border-bottom: 4px solid #FFFFFF;
+}
+
 .serviceCard img {
   width: 56px;
   height: 56px;
