@@ -1,5 +1,5 @@
 import './index.css';
-
+import TypeIt from "typeit-react";
 import Image1 from './assets/image1.png';
 import ProfileIcon from './assets/profileIcon.svg';
 import EmailIcon from './assets/emailIcon.svg';
@@ -41,8 +41,24 @@ function App() {
       <main>
         <section className='profile'>
           <div>
-            <h1>Olá, eu sou o <br />Vanilo Ferreira :)</h1>
-            <p>Desenvolvedor <span>Front-End</span></p>
+            <h1>Olá, eu sou o <br />
+              <span className='name'>Vanilo Ferreira</span>
+              :)</h1>
+            <p>Desenvolvedor <span>
+                <TypeIt
+                  options={{
+                    loop: true,
+                    waitUntilVisible: true,
+                  }}
+                  getBeforeInit={(instance) => {
+                    instance.type("Front-End").pause(750).delete(9).pause(500)
+                      .type("Back-End").pause(750).delete(8).pause(500)
+                      .type("Full-Stack");
+                    return instance;
+                  }}
+                />
+              </span>
+            </p>
 
             <div>
               <button className='CVButton'>Download CV</button>

@@ -62,6 +62,10 @@ nav a:hover {
   color: #F9F9F9;
 }
 
+.name {
+  color: #00DF5E
+}
+
 .profile p {
   font-size: 18px;
   color: #828282;
