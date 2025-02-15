@@ -102,10 +102,14 @@ nav a:hover {
   border: 1px solid #00DF5E;
 }
 
-
 .imageProfile {
   width: 300px;
   padding-right: 50px;
+}
+
+.imageProfile:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .sections {
@@ -189,6 +193,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 30px;
 }
 
 .card {
@@ -205,6 +210,11 @@ nav a:hover {
 
 .card:hover {
   border: 1px solid #00DF5E;
+}
+
+.card:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
