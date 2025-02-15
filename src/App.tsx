@@ -260,12 +260,12 @@ function App() {
             </div>
             <div className='containerForm'>
               <p className='subtitleContact'>Me mande uma mensagem</p>
-              <form>
+              <form className='form'>
                 <input type='text' placeholder='Nome' />
                 <input type='text' placeholder='E-mail' />
                 <input type='text' placeholder='Assunto' />
-                <input type='text' placeholder='Sua mensagem' />
-                <button>Enviar mensagem</button>
+                <input type='text' placeholder='Sua mensagem' id='yourMessage' />
+                <button className='contactButton'>Enviar mensagem</button>
               </form>
             </div>
           </div>
