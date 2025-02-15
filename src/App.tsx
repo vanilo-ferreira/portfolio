@@ -55,7 +55,7 @@ function App() {
           </div>
         </section>
 
-        <section  className="sections" id='aboutMe'>
+        <section className="sections" id='aboutMe'>
           <div>
             <h2 className='subtitles'>Sobre mim</h2>
 
@@ -124,7 +124,7 @@ function App() {
 
           <div className='projectCards'>
 
-          <div className='card'>
+            <div className='card'>
               <div className='cardImage'></div>
               <div className='cardDetails'>
                 <p className='cardTitle'>Título do Projeto</p>
@@ -235,27 +235,31 @@ function App() {
           </div>
         </section>
 
-        <section>
-          <div>
-            <div>
-              <p>Entrar em contato</p>
-              <p>
+        <section className='contact'>
+          <div className='containerContact'>
+            <div className='containerInformation'>
+              <p className='subtitleContact'>Entrar em contato</p>
+              <p className='contactParagraph'>
                 Sou muito acessível e adoraria falar com você. Fique à vontade para ligar, me envie um e-mail.
                 Siga-me nas redes sociais ou simplesmente preencha o formulário de consulta.
               </p>
 
-              <div>
-                <img src={PhoneIcon2} alt='Phone Icon' />
+              <div className='contactDetails'>
+                <figure>
+                  <img src={PhoneIcon2} alt='Phone Icon' />
+                </figure>
                 <p>(71) 9 9309-2086</p>
               </div>
 
-              <div>
-                <img src={EmailIcon2} alt='E-mail Icon' />
+              <div className='contactDetails'>
+                <figure>
+                  <img src={EmailIcon2} alt='E-mail Icon' />
+                </figure>
                 <p>vanilo.ferreira03@gmail.com</p>
               </div>
             </div>
-            <div>
-              <p>Me mande uma mensagem</p>
+            <div className='containerForm'>
+              <p className='subtitleContact'>Me mande uma mensagem</p>
               <form>
                 <input type='text' placeholder='Nome' />
                 <input type='text' placeholder='E-mail' />

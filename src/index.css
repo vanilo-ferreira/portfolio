@@ -10,7 +10,8 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -92,7 +93,7 @@ nav a {
   padding-right: 50px;
 }
 
-.sections{
+.sections {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,7 +239,7 @@ nav a {
   color: #828282;
 }
 
-.containerSkills{
+.containerSkills {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -261,4 +262,80 @@ nav a {
   font-weight: 300;
   margin-top: 15px;
   margin-bottom: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.containerContact {
+  background-color: #333333;
+  width: 900px;
+  height: 600px;
+  border-radius: 30px;
+  border: 1px solid #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerInformation {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 90.5px;
+}
+
+.containerForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 90.5px;
+}
+
+.subtitleContact {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 143.2%;
+}
+
+.contactParagraph {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 253px;
+  height: 182px;
+  margin: 20px 0 40px 0;
+}
+
+.contactDetails{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contactDetails figure {
+  background-color: #707070;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contactDetails img {
+  width: 20px;
+  height: 20px;
+}
+
+.contactDetails p {
+  font-size: 15px;
+  color: #FFFFFF;
 }
