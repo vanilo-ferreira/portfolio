@@ -42,22 +42,22 @@ function App() {
         <section className='profile'>
           <div>
             <h1>Olá, eu sou o <br />
-              <span className='name'>Vanilo Ferreira</span>
-              :)</h1>
+              <span className='name'>Vanilo Ferreira</span> :)
+            </h1>
             <p>Desenvolvedor <span>
-                <TypeIt
-                  options={{
-                    loop: true,
-                    waitUntilVisible: true,
-                  }}
-                  getBeforeInit={(instance) => {
-                    instance.type("Front-End").pause(750).delete(9).pause(500)
-                      .type("Back-End").pause(750).delete(8).pause(500)
-                      .type("Full-Stack");
-                    return instance;
-                  }}
-                />
-              </span>
+              <TypeIt
+                options={{
+                  loop: true,
+                  waitUntilVisible: true,
+                }}
+                getBeforeInit={(instance) => {
+                  instance.type("Front-End").pause(750).delete(9).pause(500)
+                    .type("Back-End").pause(750).delete(8).pause(500)
+                    .type("Full-Stack");
+                  return instance;
+                }}
+              />
+            </span>
             </p>
 
             <div>
