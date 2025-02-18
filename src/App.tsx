@@ -1,6 +1,5 @@
 import "./index.css";
-import TypeIt from "typeit-react";
-import Image1 from "./assets/image1.png";
+
 import ProfileIcon from "./assets/profileIcon.svg";
 import EmailIcon from "./assets/emailIcon.svg";
 import InstagramIcon from "./assets/instagramIcon.svg";
@@ -21,55 +20,14 @@ import EmailIcon2 from "./assets/emailIcon2.svg";
 import PhoneIcon2 from "./assets/phoneIcon2.svg";
 
 import { Top } from "./components/Top/Top";
+import { Profile } from "./components/Profile/Profile";
 
 function App() {
   return (
     <>
-        <Top />
+      <Top />
       <main>
-        <section className="profile">
-          <div>
-            <h1>
-              Olá, eu sou o <br />
-              <span className="name">Vanilo Ferreira</span> :)
-            </h1>
-            <p>
-              Desenvolvedor{" "}
-              <span>
-                <TypeIt
-                  options={{
-                    loop: true,
-                    waitUntilVisible: true,
-                  }}
-                  getBeforeInit={(instance) => {
-                    instance
-                      .type("Front-End")
-                      .pause(750)
-                      .delete(9)
-                      .pause(500)
-                      .type("Back-End")
-                      .pause(750)
-                      .delete(8)
-                      .pause(500)
-                      .type("Full-Stack");
-                    return instance;
-                  }}
-                />
-              </span>
-            </p>
-
-            <div>
-              <button className="CVButton">Download CV</button>
-              <a href="#contact">
-                <button className="ContactButton">Entrar em contato</button>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <img className="imageProfile" src={Image1} alt="Waving cartoon" />
-          </div>
-        </section>
+        <Profile />
 
         <section className="sections" id="aboutMe">
           <div>

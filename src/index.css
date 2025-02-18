@@ -23,72 +23,6 @@ body {
   max-width: 1140px;
 }
 
-.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.profile h1 {
-  font-size: 36px;
-  color: #F9F9F9;
-}
-
-.name {
-  color: #00DF5E
-}
-
-.profile p {
-  font-size: 18px;
-  color: #828282;
-  margin: 20px 0;
-}
-
-.profile span {
-  color: #00DF5E;
-}
-
-.profile button {
-  width: 143px;
-  height: 42px;
-  font-size: 14px;
-}
-
-.CVButton {
-  background-color: #00DF5E;
-  margin-right: 10px;
-  font-weight: bold;
-  border: none;
-}
-
-.CVButton:hover {
-  background-color: #FFFFFF;
-  color: #00DF5E;
-}
-
-.ContactButton {
-  background-color: transparent;
-  margin-right: 10px;
-  border: 1px solid #333333;
-  color: #F9F9F9;
-}
-
-.ContactButton:hover {
-  color: #00DF5E;
-  border: 1px solid #00DF5E;
-}
-
-.imageProfile {
-  width: 300px;
-  padding-right: 50px;
-}
-
-.imageProfile:hover{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 .sections {
   display: flex;
   flex-direction: column;
@@ -193,7 +127,6 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 .cardImage {
   width: 300px;
