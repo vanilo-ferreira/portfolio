@@ -23,33 +23,6 @@ body {
   max-width: 1140px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  color: #F9F9F9;
-  align-items: center;
-}
-
-.logo {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-nav {
-  display: flex;
-}
-
-nav a {
-  font-size: 18px;
-  margin: 20px;
-  text-decoration: none;
-  color: #F9F9F9;
-}
-
-nav a:hover {
-  color: #00DF5E;
-}
-
 .profile {
   display: flex;
   justify-content: space-between;
