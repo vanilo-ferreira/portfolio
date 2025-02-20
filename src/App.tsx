@@ -1,9 +1,5 @@
 import "./index.css";
 
-import CodeIcon from "./assets/codeIcon.svg";
-import FigmaIcon from "./assets/figmaIcon.svg";
-import TabletIcon from "./assets/tabletIcon.svg";
-
 import HTMLIcon from "./assets/htmlIcon.svg";
 import CSSIcon from "./assets/cssIcon.svg";
 import JSIcon from "./assets/jsIcon.svg";
@@ -18,6 +14,7 @@ import { Top } from "./components/Top/Top";
 import { Profile } from "./components/Profile/Profile";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Projects } from "./components/Projects/Projects";
+import { TypesServices } from "./components/TypesServices/TypesServices";
 
 function App() {
   return (
@@ -28,36 +25,8 @@ function App() {
         <Profile />
         <AboutMe />
         <Projects />
+        <TypesServices />
 
-        <section id="services">
-          <h2 className="subtitles">Serviços</h2>
-
-          <div className="containerServices">
-            <div className="serviceCard">
-              <img src={FigmaIcon} alt="FigmaIcon" />
-              <p>
-                Criação <br />
-                de sites
-              </p>
-            </div>
-
-            <div className="serviceCard">
-              <img src={CodeIcon} alt="Code Icon" />
-              <p>
-                Criação <br />
-                de API
-              </p>
-            </div>
-
-            <div className="serviceCard">
-              <img src={TabletIcon} alt="Tablet Icon" />
-              <p>
-                Sites <br />
-                responsivos
-              </p>
-            </div>
-          </div>
-        </section>
 
         <section id="mySkills">
           <h2 className="subtitles">Minhas skills</h2>
