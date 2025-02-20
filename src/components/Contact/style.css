@@ -1,0 +1,127 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.containerContact {
+    background-color: #333333;
+    width: 900px;
+    max-width: 900px;
+    height: 600px;
+    border-radius: 30px;
+    border: 1px solid #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.containerInformation {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 90.5px;
+}
+
+.subtitleContact {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 143.2%;
+}
+
+.contactParagraph {
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 253px;
+    height: 182px;
+    margin: 20px 0 40px 0;
+}
+
+.contactDetails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contactDetails figure {
+    background-color: #707070;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.contactDetails img {
+    width: 20px;
+    height: 20px;
+}
+
+.contactDetails p {
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.containerForm {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-right: 90.5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.form input {
+    width: 320px;
+    height: 40px;
+    background-color: #707070;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: none;
+    padding-left: 20px;
+}
+
+.form input::-webkit-input-placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+#yourMessage {
+    height: 200px;
+}
+
+#yourMessage::-webkit-input-placeholder {
+    bottom: 75px;
+    position: relative;
+}
+
+.contactButton {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00DF5E;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.contactButton:hover {
+    background-color: #FFFFFF;
+    color: #00DF5E;
+}
