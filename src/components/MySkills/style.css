@@ -1,0 +1,28 @@
+.containerSkills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.skillCard {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #212121;
+    border: 1px solid #333333;
+}
+
+.skillCard:hover {
+    border: 1px solid #00DF5E;
+}
+
+.skillCard p {
+    font-size: 14px;
+    color: #828282;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
