@@ -17,6 +17,7 @@ import PhoneIcon2 from "./assets/phoneIcon2.svg";
 import { Top } from "./components/Top/Top";
 import { Profile } from "./components/Profile/Profile";
 import { AboutMe } from "./components/AboutMe/AboutMe";
+import { Projects } from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <main>
         <Profile />
         <AboutMe />
+        <Projects />
 
         <section id="projects">
           <h2 className="subtitles">Projetos</h2>
