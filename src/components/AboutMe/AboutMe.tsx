@@ -1,8 +1,8 @@
 import './style.css';
 
-import ProfileIcon from "../../assets/profileIcon.svg";
+import LinkedInIcon from "../../assets/linkedinIcon.svg";
 import EmailIcon from "../../assets/emailIcon.svg";
-import InstagramIcon from "../../assets/instagramIcon.svg";
+import GitHubIcon from "../../assets/githubIcon.svg";
 import PhoneIcon from "../../assets/phoneIcon.svg";
 
 export function AboutMe() {
@@ -30,32 +30,27 @@ export function AboutMe() {
 
       <div className="highlight">
         <div className="featuredCards">
+
           <div className="iconInHighlights">
-            <img src={ProfileIcon} alt="Profile Icon" />
+            <img src={LinkedInIcon} alt="LinkedIn Icon" />
           </div>
           <div className="information">
-            <h4>Meu Nome</h4>
-            <p>Vanilo Ferreira</p>
+            <h4>LinkedIn</h4>
+            <a href='https://www.linkedin.com/in/vanilo-ferreira/' target='blank'>
+              vanilo-ferreira
+            </a>
           </div>
         </div>
 
         <div className="featuredCards">
           <div className="iconInHighlights">
-            <img src={EmailIcon} alt="E-mail Icon" />
+            <img src={GitHubIcon} alt="GitHub Icon" />
           </div>
           <div className="information">
-            <h4>E-mail</h4>
-            <p>vanilo.ferreira03@gmail.com</p>
-          </div>
-        </div>
-
-        <div className="featuredCards">
-          <div className="iconInHighlights">
-            <img src={InstagramIcon} alt="Instagram Icon" />
-          </div>
-          <div className="information">
-            <h4>Instagram</h4>
-            <p>vsf_erreira</p>
+            <h4>GitHub</h4>
+            <a href='https://github.com/vanilo-ferreira' target='blank'>
+              vanilo-ferreira
+            </a>
           </div>
         </div>
 
@@ -66,6 +61,16 @@ export function AboutMe() {
           <div className="information">
             <h4>Telefone</h4>
             <p>(71) 9 9309-2086</p>
+          </div>
+        </div>
+
+        <div className="featuredCards">
+          <div className="iconInHighlights">
+            <img src={EmailIcon} alt="E-mail Icon" />
+          </div>
+          <div className="information">
+            <h4>E-mail</h4>
+            <p>vanilo.ferreira03@gmail.com</p>
           </div>
         </div>
       </div>
