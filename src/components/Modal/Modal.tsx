@@ -3,7 +3,7 @@ import "./styles.css";
 import { useRef, useEffect } from 'react';
 
 import ReactIcon from '../../assets/reactIcon.svg';
-import ImagemProject from '../../assets/teste.jpg';
+import ImagemProject from '../../assets/projects/gelateria.png';
 
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -46,7 +46,7 @@ export function Modal({ isOpen, setOpen }: IModal) {
                     <div className="projectInformation">
                         <h2 className="projectTitle">Lorem ipsum</h2>
                         <p className="projectSubtitle">Lorem ipsum dolor sit</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptas eius. Ea debitis natus exercitationem laboriosam porro possimus magnam reprehenderit aut, sapiente inventore distinctio, ratione fuga, autem accusamus? Molestiae, dolorum?</p>
+                        <p className="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptas eius. Ea debitis natus exercitationem laboriosam porro possimus magnam reprehenderit aut, sapiente inventore distinctio, ratione fuga, autem accusamus? Molestiae, dolorum?</p>
                         <div className="containerButtons">
                             <button>Acessar projeto</button>
                             <button>Acessar repositório</button>
