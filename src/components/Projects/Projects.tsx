@@ -33,7 +33,7 @@ export function Projects() {
                             </div>
                             <div className='cardDetails'>
                                 <p className='cardTitle'>{project.title}</p>
-                                <p className='stacks'>Tecnologias: {projects.map(technology => technology.technologies.map(technology => technology.technology).join(", "))}.</p>
+                                <p className='stacks'>Tecnologias: {project.technologies.map(technology => technology.technology).join(", ")}.</p>
                             </div>
                         </div>
                     </>
