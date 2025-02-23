@@ -1,8 +1,12 @@
-import { Projects } from "../interfaces/IProjects";
+import { IProjects } from "../interfaces/IProjects";
 
 import Gelateria from "../assets/projects/gelateria.png";
 
-export const projects: Array<Projects> = [
+import HTMLIcon from '../assets/htmlIcon.svg';
+import CSSIcon from '../assets/cssIcon.svg';
+import ReactIcon from '../assets/reactIcon.svg';
+
+export const projects: Array<IProjects> = [
     {
         title: 'Gelateria',
         subtitle: "Venda de sorvetes",
@@ -13,7 +17,15 @@ export const projects: Array<Projects> = [
         technologies: [
             {
                 technology: "React",
-                image: ""
+                image: ReactIcon
+            },
+            {
+                technology: "HTML",
+                image: HTMLIcon
+            },
+            {
+                technology: "CSS",
+                image: CSSIcon
             }
         ],
     }

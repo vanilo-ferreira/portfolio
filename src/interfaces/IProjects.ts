@@ -1,14 +1,25 @@
-export interface Projects {
+export interface ITechnologies {
+    technology: string,
+    image: string
+}
+export interface IProjects {
     title: string,
     subtitle: string,
     description: string,
     deploy: string,
     githubLink: string,
     projectImage: string,
-    technologies: [
-        {
-            technology: string,
-            image: string
-        }
-    ]
+    technologies: Array<ITechnologies>
+}
+
+export interface IModal {
+    isOpen: boolean;
+    setOpen: (isOpen: boolean) => void;
+    title: string;
+    subtitle: string;
+    description: string;
+    deploy: string;
+    githubLink: string;
+    projectImage: string;
+    technologies: Array<ITechnologies>;
 }
