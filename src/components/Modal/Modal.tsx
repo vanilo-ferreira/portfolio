@@ -1,18 +1,12 @@
-import "./styles.css";
+import './styles.css';
 
 import { useRef, useEffect } from 'react';
 
-import ReactIcon from '../../assets/reactIcon.svg';
-import ImagemProject from '../../assets/projects/gelateria.png';
-
 import CloseIcon from '@mui/icons-material/Close';
 
-interface IModal {
-    isOpen: boolean;
-    setOpen: (isOpen: boolean) => void;
-}
+import { IModal } from '../../interfaces/IProjects';
 
-export function Modal({ isOpen, setOpen }: IModal) {
+export function Modal({ isOpen, setOpen, title, subtitle, description, deploy, githubLink, projectImage, technologies }: IModal) {
     const modalRef = useRef<HTMLDivElement | null>(null);
 
     function closeModal() {
@@ -27,7 +21,6 @@ export function Modal({ isOpen, setOpen }: IModal) {
         };
 
         document.addEventListener('mousedown', handleOutsideClick);
-
         return () => {
             document.removeEventListener('mousedown', handleOutsideClick);
         };
@@ -35,32 +28,32 @@ export function Modal({ isOpen, setOpen }: IModal) {
 
     if (isOpen) {
         return (
-            <div className="background">
-                <div className="containerModal" ref={modalRef}>
-                    <div className="close">
-                        <CloseIcon onClick={() => closeModal()} fontSize="medium"/>
+            <div className='background'>
+                <div className='containerModal' ref={modalRef}>
+                    <div className='close'>
+                        <CloseIcon onClick={() => closeModal()} fontSize='medium' />
                     </div>
-                    <div className="projectImage">
-                        <img src={ImagemProject} alt='Teste' />
+                    <div className='projectImage'>
+                        <img src={projectImage} alt={`Project image ${title}`} />
                     </div>
-                    <div className="projectInformation">
-                        <h2 className="projectTitle">Lorem ipsum</h2>
-                        <p className="projectSubtitle">Lorem ipsum dolor sit</p>
-                        <p className="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptas eius. Ea debitis natus exercitationem laboriosam porro possimus magnam reprehenderit aut, sapiente inventore distinctio, ratione fuga, autem accusamus? Molestiae, dolorum?</p>
-                        <div className="containerButtons">
-                            <button>Acessar projeto</button>
-                            <button>Acessar repositório</button>
+                    <div className='projectInformation'>
+                        <h2 className='projectTitle'>{title}</h2>
+                        <p className='projectSubtitle'>{subtitle}</p>
+                        <p className='projectDescription'>{description}</p>
+                        <div className='containerButtons'>
+                            <a href={deploy} target='blank'>
+                                <button>Acessar projeto</button>
+                            </a>
+                            <a href={githubLink} target='blank'>
+                                <button>Acessar repositório</button>
+                            </a>
                         </div>
                         <div>
-                            <p className="technologies">Tecnologias utilizadas:</p>
-                            <div className="containerTechnologies">
-                                <img src={ReactIcon} alt='React Logo' />
-                                <img src={ReactIcon} alt='React Logo' />
-                                <img src={ReactIcon} alt='React Logo' />
-                                <img src={ReactIcon} alt='React Logo' />
-                                <img src={ReactIcon} alt='React Logo' />
-                                <img src={ReactIcon} alt='React Logo' />
-                                <img src={ReactIcon} alt='React Logo' />
+                            <p className='technologies'>Tecnologias utilizadas:</p>
+                            <div className='containerTechnologies'>
+                                {technologies.map((technology) => (
+                                    <img src={technology.image} alt={`Technology icon ${technology.technology}`}/>
+                                ))}
                             </div>
                         </div>
                     </div>
