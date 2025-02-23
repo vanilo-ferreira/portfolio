@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 
-import { IModal } from '../../interfaces/IProjects';
+import { IModal } from '../../interfaces/IModal';
 
 export function Modal({ isOpen, setOpen, title, subtitle, description, deploy, githubLink, projectImage, technologies }: IModal) {
     const modalRef = useRef<HTMLDivElement | null>(null);
