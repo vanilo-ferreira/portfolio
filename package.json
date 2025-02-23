@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/icons-material": "^6.4.5",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^2.9.10",
+    "@mui/material": "^5.16.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typeit-react": "^2.7.8"
