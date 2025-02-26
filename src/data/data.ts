@@ -2,10 +2,12 @@ import { IProjects } from "../interfaces/IProjects";
 
 import Gelateria from "../assets/projects/gelateria.png";
 import Barbearia from "../assets/projects/barbearia.png";
+import BuscadorCep from "../assets/projects/buscadorCep.png";
 
 import HTMLIcon from "../assets/htmlIcon.svg";
 import CSSIcon from "../assets/cssIcon.svg";
 import ReactIcon from "../assets/reactIcon.svg";
+import JavaScriptIcon from "../assets/jsIcon.svg";
 
 export const projects: Array<IProjects> = [
   {
@@ -45,6 +47,30 @@ export const projects: Array<IProjects> = [
       {
         technology: "React",
         image: ReactIcon,
+      },
+      {
+        technology: "HTML",
+        image: HTMLIcon,
+      },
+      {
+        technology: "CSS",
+        image: CSSIcon,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Buscador de CEP",
+    subtitle: "Buscador de CEP utilizando a API ViaCEP",
+    description:
+      "Desenvolver uma aplicação web utilizando HTML, CSS e JavaScript que permita ao usuário consultar informações de um CEP informado. A aplicação será integrada a uma API externa, ViaCEP, para buscar dados como logradouro, bairro, cidade e estado, exibindo-os de forma dinâmica na interface.",
+    deploy: "https://buscador-cep-rho-nine.vercel.app/",
+    githubLink: "https://github.com/vanilo-ferreira/buscador-cep",
+    projectImage: BuscadorCep,
+    technologies: [
+      {
+        technology: "JavaScript",
+        image: JavaScriptIcon,
       },
       {
         technology: "HTML",
