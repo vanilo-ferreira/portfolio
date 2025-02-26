@@ -38,7 +38,7 @@ export function Profile() {
 
         <div>
           <a href="https://www.canva.com/design/DAGeSwoDN2A/oKTMtnVrNPd4sYLie28rNg/edit?utm_content=DAGeSwoDN2A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="blank">
-            <button className="CVButton">Vizualizar CV</button>
+            <button className="CVButton">Visualizar CV</button>
           </a>
           <a href="#contact">
             <button className="ContactButton">Entrar em contato</button>
