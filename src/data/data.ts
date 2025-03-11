@@ -3,11 +3,13 @@ import { IProjects } from "../interfaces/IProjects";
 import Gelateria from "../assets/projects/gelateria.png";
 import Barbearia from "../assets/projects/barbearia.png";
 import BuscadorCep from "../assets/projects/buscadorCep.png";
+import JordanShoes from "../assets/projects/jordanshoes.png";
 
 import HTMLIcon from "../assets/htmlIcon.svg";
 import CSSIcon from "../assets/cssIcon.svg";
-import ReactIcon from "../assets/reactIcon.svg";
 import JavaScriptIcon from "../assets/jsIcon.svg";
+import TypeScriptIcon from "../assets/typescriptIcon.svg";
+import ReactIcon from "../assets/react.svg";
 
 export const projects: Array<IProjects> = [
   {
@@ -80,6 +82,26 @@ export const projects: Array<IProjects> = [
         technology: "CSS",
         image: CSSIcon,
       },
+    ],
+  },
+  {
+    id: 4,
+    title: "JordanShoes",
+    subtitle: "Loja de Sapatos Jordan",
+    description:
+      "Desenvolver um e-commerce virtual para a venda de sapatos da marca Jordan, JordanShoes, utilizando React e TypeScript, com Vite para garantir um ambiente de desenvolvimento mais rápido e otimizado. A aplicação terá uma interface moderna, responsiva e intuitiva, proporcionando uma ótima experiência de navegação.",
+    deploy: "https://jordanshoes-lovat.vercel.app/",
+    githubLink: "https://github.com/vanilo-ferreira/jordanshoes",
+    projectImage: JordanShoes,
+    technologies: [
+      {
+        technology: "TypeScript",
+        image: TypeScriptIcon,
+      },
+      {
+        technology: "React",
+        image: ReactIcon,
+      }
     ],
   },
 ];
