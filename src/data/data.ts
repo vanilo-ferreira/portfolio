@@ -4,12 +4,14 @@ import Gelateria from "../assets/projects/gelateria.png";
 import Barbearia from "../assets/projects/barbearia.png";
 import BuscadorCep from "../assets/projects/buscadorCep.png";
 import JordanShoes from "../assets/projects/jordanshoes.png";
+import Cardapio from "../assets/projects/cardapio.png";
 
 import HTMLIcon from "../assets/htmlIcon.svg";
 import CSSIcon from "../assets/cssIcon.svg";
 import JavaScriptIcon from "../assets/jsIcon.svg";
 import TypeScriptIcon from "../assets/typescriptIcon.svg";
 import ReactIcon from "../assets/react.svg";
+import NextJsIcon from "../assets/nextjsIcon.svg";
 
 export const projects: Array<IProjects> = [
   {
@@ -101,7 +103,27 @@ export const projects: Array<IProjects> = [
       {
         technology: "React",
         image: ReactIcon,
-      }
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Cardápio",
+    subtitle: "Cardápio virtual para um restaurante",
+    description:
+      "Desenvolver uma aplicação de cardápio digital utilizando Next.js, proporcionando uma navegação fluida, rápida e otimizada. A aplicação permitirá que os usuários pesquisem pratos específicos por meio de uma barra de pesquisa e filtrem os itens por categoria (Entradas, Massas, Carnes, Bebidas, Saladas e Sobremesas), garantindo uma experiência intuitiva e eficiente.",
+    deploy: "https://projeto-cardapio-iota.vercel.app/",
+    githubLink: "https://github.com/vanilo-ferreira/projeto-cardapio",
+    projectImage: Cardapio,
+    technologies: [
+      {
+        technology: "Next.js",
+        image: NextJsIcon,
+      },
+      {
+        technology: "JavaScript",
+        image: JavaScriptIcon,
+      },
     ],
   },
 ];
