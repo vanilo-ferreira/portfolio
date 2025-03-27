@@ -3,7 +3,40 @@ import './style.css';
 import EmailIcon2 from '../../assets/emailIcon2.svg';
 import PhoneIcon2 from '../../assets/phoneIcon2.svg';
 
+import { useState } from 'react';
+
+import { formValidationRevolser } from '../../validations/formValidation';
+
+import { FormProvider, useForm } from "react-hook-form";
+import { sendContactForm } from "../../services/ContactService";
+import { IContactForm } from '../../interfaces/IContactForm';
+
 export function Contact() {
+
+    const [isLoading, setIsLoading] = useState(false);
+
+    const formsMethods = useForm<IContactForm>({ resolver: formValidationRevolser });
+    const {
+        formState: { errors },
+        register,
+        handleSubmit,
+        reset
+    } = formsMethods;
+
+    async function onSubmit(data: IContactForm) {
+        setIsLoading(true);
+        try {
+            await sendContactForm(data);
+            alert("Mensagem enviada com sucesso!");
+            reset();
+        } catch (error) {
+            alert("Erro ao enviar mensagem. Tente novamente.");
+        } finally {
+            setIsLoading(false);
+        }
+    }
+
+
     return (
         <div className='contact' id='contact'>
             <div className='containerContact'>
@@ -31,17 +64,26 @@ export function Contact() {
                 </div>
                 <div className='containerForm'>
                     <p className='subtitleContact'>Me mande uma mensagem</p>
-                    <form className='form'>
-                        <input type='text' placeholder='Nome' />
-                        <input type='text' placeholder='E-mail' />
-                        <input type='text' placeholder='Assunto' />
-                        <input
-                            type='text'
-                            placeholder='Sua mensagem'
-                            id='yourMessage'
-                        />
-                        <button className='contactButton'>Enviar mensagem</button>
-                    </form>
+                    <FormProvider {...formsMethods}>
+                        <form className='form' onSubmit={handleSubmit(onSubmit)}>
+                            <input {...register('name')} type='text' placeholder='Nome' />
+                            {errors?.name?.message && (<p>{errors?.name?.message}</p>)}
+                            <input {...register('email')} type='email' placeholder='E-mail' />
+                            {errors?.email?.message && (<p>{errors?.email?.message}</p>)}
+                            <input {...register('subject')} type='text' placeholder='Assunto' />
+                            {errors?.subject?.message && (<p>{errors?.subject?.message}</p>)}
+                            <input
+                                {...register('message')}
+                                type='text'
+                                placeholder='Sua mensagem'
+                                id='yourMessage'
+                            />
+                            {errors?.message?.message && (<p>{errors?.message?.message}</p>)}
+                            <button className='contactButton' type="submit" disabled={isLoading}>
+                                {isLoading ? "Enviando..." : "Enviar"}
+                            </button>
+                        </form>
+                    </FormProvider>
                 </div>
             </div>
         </div>
