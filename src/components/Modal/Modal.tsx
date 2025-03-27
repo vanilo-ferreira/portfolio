@@ -30,6 +30,7 @@ export function Modal({ isOpen, setOpen, title, subtitle, description, deploy, g
         return (
             <div className='background'>
                 <div className='containerModal' ref={modalRef}>
+
                     <div className='close'>
                         <CloseIcon onClick={() => closeModal()} fontSize='medium' />
                     </div>
@@ -61,4 +62,4 @@ export function Modal({ isOpen, setOpen, title, subtitle, description, deploy, g
             </div>
         )
     }
-}
+};
