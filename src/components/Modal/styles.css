@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #FFFFFF;
 }
 
 .projectImage {
@@ -29,7 +30,6 @@
     align-items: center;
     background-color: #191919;
     border-radius: 10px;
-    
 }
 
 .projectImage img {
