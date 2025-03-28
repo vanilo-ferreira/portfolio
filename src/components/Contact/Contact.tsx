@@ -67,18 +67,17 @@ export function Contact() {
                     <FormProvider {...formsMethods}>
                         <form className='form' onSubmit={handleSubmit(onSubmit)}>
                             <input {...register('name')} type='text' placeholder='Nome' />
-                            {errors?.name?.message && (<p>{errors?.name?.message}</p>)}
+                            {errors?.name?.message && (<p className='errorMessage'>{errors?.name?.message}</p>)}
                             <input {...register('email')} type='email' placeholder='E-mail' />
-                            {errors?.email?.message && (<p>{errors?.email?.message}</p>)}
+                            {errors?.email?.message && (<p className='errorMessage'>{errors?.email?.message}</p>)}
                             <input {...register('subject')} type='text' placeholder='Assunto' />
-                            {errors?.subject?.message && (<p>{errors?.subject?.message}</p>)}
-                            <input
+                            {errors?.subject?.message && (<p className='errorMessage'>{errors?.subject?.message}</p>)}
+                            <textarea
                                 {...register('message')}
-                                type='text'
                                 placeholder='Sua mensagem'
                                 id='yourMessage'
                             />
-                            {errors?.message?.message && (<p>{errors?.message?.message}</p>)}
+                            {errors?.message?.message && (<p className='errorMessage'>{errors?.message?.message}</p>)}
                             <button className='contactButton' type="submit" disabled={isLoading}>
                                 {isLoading ? "Enviando..." : "Enviar"}
                             </button>

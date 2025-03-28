@@ -5,6 +5,10 @@
     margin: 100px;
 }
 
+.errorMessage {
+    color: #FA0101;
+}
+
 .containerContact {
     background-color: #333333;
     width: 900px;
@@ -86,27 +90,38 @@
     align-items: center;
 }
 
-.form input {
-    width: 320px;
+.form input,
+#yourMessage {
     height: 40px;
     background-color: #707070;
     border-radius: 10px;
     margin: 10px 0;
     border: none;
     padding-left: 20px;
+    font-family: "DM Sans", serif;
 }
 
-.form input::-webkit-input-placeholder {
-    color: white;
+.form input {
+    padding-left: 20px;
+    width: 320px;
+}
+
+.form input::placeholder{
+    color: #FFFFFF;
     font-size: 15px;
 }
 
 #yourMessage {
-    height: 200px;
+    width: 300px;
+    height: 160px;
+    max-height: 200px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 15px;
 }
 
-#yourMessage::-webkit-input-placeholder {
-    bottom: 75px;
+textarea::placeholder{
+    color: #FFFFFF;
 }
 
 .contactButton {
