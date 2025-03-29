@@ -1,19 +1,21 @@
 import './style.css';
 
-import EmailIcon2 from '../../assets/emailIcon2.svg';
-import PhoneIcon2 from '../../assets/phoneIcon2.svg';
-
 import { useState } from 'react';
+import { FormProvider, useForm } from "react-hook-form";
+import Alert from '@mui/material/Alert';
 
 import { formValidationRevolser } from '../../validations/formValidation';
-
-import { FormProvider, useForm } from "react-hook-form";
 import { sendContactForm } from "../../services/ContactService";
 import { IContactForm } from '../../interfaces/IContactForm';
+
+import EmailIcon2 from '../../assets/emailIcon2.svg';
+import PhoneIcon2 from '../../assets/phoneIcon2.svg';
 
 export function Contact() {
 
     const [isLoading, setIsLoading] = useState(false);
+    const [alertError, setAlertError] = useState(false);
+    const [alertSuccess, setAlertSuccess] = useState(false);
 
     const formsMethods = useForm<IContactForm>({ resolver: formValidationRevolser });
     const {
@@ -26,16 +28,15 @@ export function Contact() {
     async function onSubmit(data: IContactForm) {
         setIsLoading(true);
         try {
-            await sendContactForm(data);
-            alert("Mensagem enviada com sucesso!");
+            await sendContactForm(data)
+            setAlertSuccess(true);
             reset();
         } catch (error) {
-            alert("Erro ao enviar mensagem. Tente novamente.");
+            setAlertError(true);
         } finally {
             setIsLoading(false);
         }
     }
-
 
     return (
         <div className='contact' id='contact'>
@@ -81,6 +82,18 @@ export function Contact() {
                             <button className='contactButton' type="submit" disabled={isLoading}>
                                 {isLoading ? "Enviando..." : "Enviar"}
                             </button>
+
+                            {alertError && (
+                                <Alert className='alert' variant="filled" severity="error">
+                                    Erro ao enviar mensagem. Tente novamente.
+                                </Alert>
+                            )}
+
+                            {alertSuccess && (
+                                <Alert className='alert' variant="filled" severity="success">
+                                    Mensagem enviada com sucesso!
+                                </Alert>
+                            )}
                         </form>
                     </FormProvider>
                 </div>

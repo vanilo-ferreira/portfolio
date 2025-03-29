@@ -9,6 +9,15 @@
     color: #FA0101;
 }
 
+.containerAlerts {
+    position: absolute;
+}
+
+.alert {
+    position: relative;
+    top: 20px;
+}
+
 .containerContact {
     background-color: #333333;
     width: 900px;
