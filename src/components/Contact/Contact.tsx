@@ -3,6 +3,8 @@ import './style.css';
 import { useState } from 'react';
 import { FormProvider, useForm } from "react-hook-form";
 import Alert from '@mui/material/Alert';
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
 
 import { formValidationRevolser } from '../../validations/formValidation';
 import { sendContactForm } from "../../services/ContactService";
@@ -84,15 +86,40 @@ export function Contact() {
                             </button>
 
                             {alertError && (
-                                <Alert className='alert' variant="filled" severity="error">
-                                    Erro ao enviar mensagem. Tente novamente.
-                                </Alert>
+                                <Alert className='alert' variant="filled" severity="error"
+                                    action={
+                                        <IconButton
+                                            aria-label="close"
+                                            color="inherit"
+                                            size="small"
+                                            onClick={() => {
+                                                setAlertError(false);
+                                            }}
+                                        >
+                                            <CloseIcon fontSize="inherit" />
+                                        </IconButton>
+                                    }
+                                    sx={{ mb: 2 }}
+                                > Erro ao enviar mensagem.<br/>
+                                    Tente novamente.</Alert>
                             )}
 
                             {alertSuccess && (
-                                <Alert className='alert' variant="filled" severity="success">
-                                    Mensagem enviada com sucesso!
-                                </Alert>
+                                <Alert className='alert' variant="filled" severity="success"
+                                    action={
+                                        <IconButton
+                                            aria-label="close"
+                                            color="inherit"
+                                            size="small"
+                                            onClick={() => {
+                                                setAlertSuccess(false);
+                                            }}
+                                        >
+                                            <CloseIcon fontSize="inherit" />
+                                        </IconButton>
+                                    }
+                                    sx={{ mb: 2 }}
+                                > Mensagem enviada com sucesso!</Alert>
                             )}
                         </form>
                     </FormProvider>
