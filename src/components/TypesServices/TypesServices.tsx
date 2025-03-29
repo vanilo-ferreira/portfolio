@@ -1,8 +1,8 @@
 import './styles.css';
 
-import CodeIcon from '../../assets/codeIcon.svg';
-import FigmaIcon from '../../assets/figmaIcon.svg';
-import TabletIcon from '../../assets/tabletIcon.svg';
+import CodeIcon from '../../assets/icons/codeIcon.svg';
+import FigmaIcon from '../../assets/icons/figmaIcon.svg';
+import TabletIcon from '../../assets/icons/tabletIcon.svg';
 
 export function TypesServices() {
     return (

@@ -1,9 +1,9 @@
 import './style.css';
 
-import LinkedInIcon from "../../assets/linkedinIcon.svg";
-import EmailIcon from "../../assets/emailIcon.svg";
-import GitHubIcon from "../../assets/githubIcon.svg";
-import PhoneIcon from "../../assets/phoneIcon.svg";
+import LinkedInIcon from "../../assets/icons/linkedinIcon.svg";
+import EmailIcon from "../../assets/icons/emailIcon.svg";
+import GitHubIcon from "../../assets/icons/githubIcon.svg";
+import PhoneIcon from "../../assets/icons/phoneIcon.svg";
 
 export function AboutMe() {
   return (

@@ -1,11 +1,11 @@
 import './style.css'; 
 
-import HTMLIcon from '../../assets/htmlIcon.svg';
-import CSSIcon from '../../assets/cssIcon.svg';
-import JSIcon from '../../assets/jsIcon.svg';
-import TailwindIcon from '../../assets/tailwindIcon.svg';
-import ReactIcon from '../../assets/reactIcon.svg';
-import NextIcon from '../../assets/nextjsIcon.svg';
+import HTMLIcon from '../../assets/icons/htmlIcon.svg';
+import CSSIcon from '../../assets/icons/cssIcon.svg';
+import JSIcon from '../../assets/icons/jsIcon.svg';
+import TailwindIcon from '../../assets/icons/tailwindIcon.svg';
+import ReactIcon from '../../assets/icons/reactIcon.svg';
+import NextIcon from '../../assets/icons/nextjsIcon.svg';
 
 export function MySkills() {
     return (

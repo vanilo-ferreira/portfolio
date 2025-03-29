@@ -10,8 +10,8 @@ import { formValidationRevolser } from '../../validations/formValidation';
 import { sendContactForm } from "../../services/ContactService";
 import { IContactForm } from '../../interfaces/IContactForm';
 
-import EmailIcon2 from '../../assets/emailIcon2.svg';
-import PhoneIcon2 from '../../assets/phoneIcon2.svg';
+import EmailIcon2 from '../../assets/icons/emailIcon2.svg';
+import PhoneIcon2 from '../../assets/icons/phoneIcon2.svg';
 
 export function Contact() {
 

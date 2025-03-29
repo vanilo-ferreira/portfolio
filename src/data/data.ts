@@ -6,12 +6,12 @@ import BuscadorCep from "../assets/projects/buscadorCep.png";
 import JordanShoes from "../assets/projects/jordanshoes.png";
 import Cardapio from "../assets/projects/cardapio.png";
 
-import HTMLIcon from "../assets/htmlIcon.svg";
-import CSSIcon from "../assets/cssIcon.svg";
-import JavaScriptIcon from "../assets/jsIcon.svg";
-import TypeScriptIcon from "../assets/typescriptIcon.svg";
-import ReactIcon from "../assets/react.svg";
-import NextJsIcon from "../assets/nextjsIcon.svg";
+import HTMLIcon from "../assets/icons/htmlIcon.svg";
+import CSSIcon from "../assets/icons/cssIcon.svg";
+import JavaScriptIcon from "../assets/icons/jsIcon.svg";
+import TypeScriptIcon from "../assets/icons/typescriptIcon.svg";
+import ReactIcon from "../assets/icons/react.svg";
+import NextJsIcon from "../assets/icons/nextjsIcon.svg";
 
 export const projects: Array<IProjects> = [
     {
