@@ -101,6 +101,7 @@
 
 .form input,
 #yourMessage {
+    color: #FFFFFF;
     height: 40px;
     background-color: #707070;
     border-radius: 10px;
@@ -108,6 +109,7 @@
     border: none;
     padding-left: 20px;
     font-family: "DM Sans", serif;
+    font-size: 15px;
 }
 
 .form input {
@@ -115,9 +117,8 @@
     width: 320px;
 }
 
-.form input::placeholder{
+input::placeholder {
     color: #FFFFFF;
-    font-size: 15px;
 }
 
 #yourMessage {
@@ -125,11 +126,9 @@
     height: 160px;
     max-height: 200px;
     padding: 20px;
-    color: #FFFFFF;
-    font-size: 15px;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: #FFFFFF;
 }
 
