@@ -1,6 +1,6 @@
 import './style.css';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FormProvider, useForm } from "react-hook-form";
 import Alert from '@mui/material/Alert';
 import CloseIcon from '@mui/icons-material/Close';
@@ -27,6 +27,28 @@ export function Contact() {
         handleSubmit,
         reset
     } = formsMethods;
+
+    useEffect(() => {
+        let errorTimer: NodeJS.Timeout;
+        let successTimer: NodeJS.Timeout;
+
+        if (alertError) {
+            errorTimer = setTimeout(() => {
+                setAlertError(false);
+            }, 10000);
+        }
+
+        if (alertSuccess) {
+            successTimer = setTimeout(() => {
+                setAlertSuccess(false);
+            }, 10000);
+        }
+
+        return () => {
+            clearTimeout(errorTimer);
+            clearTimeout(successTimer);
+        };
+    }, [alertError, alertSuccess]);
 
     async function onSubmit(data: IContactForm) {
         setIsLoading(true);
@@ -64,7 +86,7 @@ export function Contact() {
                         </figure>
                         <p>vanilo.ferreira03@gmail.com</p>
                     </div>
-                    
+
                     <a href='https://www.linkedin.com/in/vanilo-ferreira/' target='blank'>
                         <div className='contactDetails' >
                             <figure>
