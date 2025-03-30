@@ -5,6 +5,10 @@
     margin: 100px;
 }
 
+.contact a {
+    text-decoration: none;
+}
+
 .errorMessage {
     color: #FA0101;
 }
@@ -63,6 +67,7 @@
 
 .contactDetails figure {
     background-color: #707070;
+    color: #FFFFFF;
     width: 40px;
     height: 40px;
     border-radius: 30px;
@@ -80,6 +85,7 @@
 .contactDetails p {
     font-size: 15px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .containerForm {
@@ -145,5 +151,9 @@ textarea::placeholder {
 
 .contactButton:hover {
     background-color: #FFFFFF;
+    color: #00DF5E;
+}
+
+#linkedInLink:hover {
     color: #00DF5E;
 }

@@ -10,8 +10,9 @@ import { formValidationRevolser } from '../../validations/formValidation';
 import { sendContactForm } from "../../services/ContactService";
 import { IContactForm } from '../../interfaces/IContactForm';
 
-import EmailIcon2 from '../../assets/icons/emailIcon2.svg';
-import PhoneIcon2 from '../../assets/icons/phoneIcon2.svg';
+import EmailIcon from '@mui/icons-material/Email';
+import CallIcon from '@mui/icons-material/Call';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export function Contact() {
 
@@ -46,24 +47,32 @@ export function Contact() {
                 <div className='containerInformation'>
                     <p className='subtitleContact'>Entrar em contato</p>
                     <p className='contactParagraph'>
-                        Sou muito acessível e adoraria falar com você. Fique à vontade
-                        para ligar, me envie um e-mail. Siga-me nas redes sociais ou
-                        simplesmente preencha o formulário de consulta.
+                        Estou à disposição e adoraria conversar com você! <br />
+                        Fique à vontade para entrar em contato por telefone, enviar um e-mail, seguir-me nas redes sociais ou, se preferir, preenchendo o formulário de contato.
                     </p>
 
                     <div className='contactDetails'>
                         <figure>
-                            <img src={PhoneIcon2} alt='Phone Icon' />
+                            <CallIcon />
                         </figure>
                         <p>(71) 9 9309-2086</p>
                     </div>
 
                     <div className='contactDetails'>
                         <figure>
-                            <img src={EmailIcon2} alt='E-mail Icon' />
+                            <EmailIcon />
                         </figure>
                         <p>vanilo.ferreira03@gmail.com</p>
                     </div>
+                    
+                    <a href='https://www.linkedin.com/in/vanilo-ferreira/' target='blank'>
+                        <div className='contactDetails' >
+                            <figure>
+                                <LinkedInIcon id='linkedInLink' />
+                            </figure>
+                            <p id='linkedInLink'>vanilo-ferreira</p>
+                        </div>
+                    </a>
                 </div>
                 <div className='containerForm'>
                     <p className='subtitleContact'>Me mande uma mensagem</p>
@@ -100,7 +109,7 @@ export function Contact() {
                                         </IconButton>
                                     }
                                     sx={{ mb: 2 }}
-                                > Erro ao enviar mensagem.<br/>
+                                > Erro ao enviar mensagem.<br />
                                     Tente novamente.</Alert>
                             )}
 
