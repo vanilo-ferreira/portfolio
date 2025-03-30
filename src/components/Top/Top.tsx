@@ -11,7 +11,7 @@ export function Top() {
         <a href="#aboutMe">Sobre mim</a>
         <a href="#projects">Projetos</a>
         <a href="#services">Serviços</a>
-        <a href="#mySkills">Minhas skills</a>
+        <a href="#mySkills">Tecnologias</a>
       </nav>
     </header>
   );

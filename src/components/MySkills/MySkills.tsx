@@ -51,7 +51,7 @@ export function MySkills() {
 
     return (
         <div id='mySkills'>
-            <h2 className='subtitles'>Minhas skills</h2>
+            <h2 className='subtitles'>Tecnologias</h2>
 
             <div className='containerSkills'>
                 <ArrowBackIcon
