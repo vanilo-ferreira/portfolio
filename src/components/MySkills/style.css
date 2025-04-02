@@ -1,41 +1,48 @@
 .containerSkills {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  align-items: center;
 }
 
 .arrows {
-    width: 100px;
-    padding: 5px;
-    border: #00DF5E solid 2px;
-    border-radius: 25px;
-    color: #FFFFFF;
+  width: 100px;
+  padding: 5px;
+  border: #00df5e solid 2px;
+  border-radius: 25px;
+  color: #ffffff;
 }
 
 .arrows:hover {
-    color: #00DF5E;
+  color: #00df5e;
 }
 
 .skillCard {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #212121;
-    border: 1px solid #333333;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #212121;
+  border: 1px solid #333333;
 }
 
 .skillCard:hover {
-    border: 1px solid #00DF5E;
+  border: 1px solid #00df5e;
 }
 
 .skillCard p {
-    font-size: 14px;
-    color: #828282;
-    font-weight: 300;
-    margin-top: 15px;
-    margin-bottom: 5px;
+  font-size: 14px;
+  color: #828282;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.icons {
+  width: 100px;
+  height: 100px;
+  max-width: 150px;
+  max-height: 150px;
 }
