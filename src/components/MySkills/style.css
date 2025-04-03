@@ -8,13 +8,13 @@
 .arrows {
   width: 100px;
   padding: 5px;
-  border: #00df5e solid 2px;
+  border: #00DF5E solid 2px;
   border-radius: 25px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .arrows:hover {
-  color: #00df5e;
+  color: #00DF5E;
 }
 
 .skillCard {
@@ -29,7 +29,7 @@
 }
 
 .skillCard:hover {
-  border: 1px solid #00df5e;
+  border: 1px solid #00DF5E;
 }
 
 .skillCard p {

@@ -15,19 +15,27 @@ import AngularIcon from "../../assets/icons/angularJsIcon.svg";
 import NodeJsIcon from "../../assets/icons/nodeJsIcon.svg";
 import MaterialUiIcon from "../../assets/icons/materialUiIcon.svg";
 import StyledComponentIcon from "../../assets/icons/styledComponentsIcon.svg";
+import ViteIcon from "../../assets/icons/ViteIcon.svg";
+import FigmaIcon from "../../assets/icons/figmaIcon.svg";
+import GitIcon from "../../assets/icons/gitIcon.svg";
+import PostgresSQLIcon from "../../assets/icons/postgresqlIcon.svg";
 
 const skills = [
   { icon: AngularIcon, name: "Angular" },
   { icon: CSSIcon, name: "CSS" },
   { icon: JSIcon, name: "JavaSacript" },
+  { icon: FigmaIcon, name: "Figma" },
+  { icon: GitIcon, name: "Git" },
   { icon: HTMLIcon, name: "HTML" },
   { icon: MaterialUiIcon, name: "Material-UI" },
   { icon: NextIcon, name: "Next.js" },
   { icon: NodeJsIcon, name: "Node.js" },
+  { icon: PostgresSQLIcon, name: "PostgresSQL" },
   { icon: ReactIcon, name: "React" },
   { icon: StyledComponentIcon, name: "styled-component" },
   { icon: TailwindIcon, name: "Tailwind" },
   { icon: TypeScriptIcon, name: "TypesScript" },
+  { icon: ViteIcon, name: "Vite" },
 ];
 
 export function MySkills() {
