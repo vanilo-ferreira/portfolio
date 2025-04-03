@@ -3,7 +3,7 @@ import { IProjects } from "../interfaces/IProjects";
 import Gelateria from "../assets/projects/gelateria.png";
 import Barbearia from "../assets/projects/barbearia.png";
 import BuscadorCep from "../assets/projects/buscadorCep.png";
-import JordanShoes from "../assets/projects/jordanshoes.png";
+import JordanShoes from "../assets/projects/jordanShoes.png";
 import Cardapio from "../assets/projects/cardapio.png";
 
 import HTMLIcon from "../assets/icons/htmlIcon.svg";
