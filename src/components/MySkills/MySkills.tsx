@@ -15,7 +15,7 @@ import AngularIcon from "../../assets/icons/angularJsIcon.svg";
 import NodeJsIcon from "../../assets/icons/nodeJsIcon.svg";
 import MaterialUiIcon from "../../assets/icons/materialUiIcon.svg";
 import StyledComponentIcon from "../../assets/icons/styledComponentsIcon.svg";
-import ViteIcon from "../../assets/icons/ViteIcon.svg";
+import ViteIcon from "../../assets/icons/viteIcon.svg";
 import FigmaIcon from "../../assets/icons/figmaIcon.svg";
 import GitIcon from "../../assets/icons/gitIcon.svg";
 import PostgresSQLIcon from "../../assets/icons/postgresqlIcon.svg";
