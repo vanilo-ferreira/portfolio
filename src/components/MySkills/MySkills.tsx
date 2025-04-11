@@ -19,6 +19,7 @@ import ViteIcon from "../../assets/icons/viteIcon.svg";
 import FigmaIcon from "../../assets/icons/figmaIcon.svg";
 import GitIcon from "../../assets/icons/gitIcon.svg";
 import PostgresSQLIcon from "../../assets/icons/postgresqlIcon.svg";
+import PythonIcon from "../../assets/icons/pythonIcon.svg";
 
 const skills = [
   { icon: AngularIcon, name: "Angular" },
@@ -31,6 +32,7 @@ const skills = [
   { icon: NextIcon, name: "Next.js" },
   { icon: NodeJsIcon, name: "Node.js" },
   { icon: PostgresSQLIcon, name: "PostgresSQL" },
+  { icon: PythonIcon, name: "Python" },
   { icon: ReactIcon, name: "React" },
   { icon: StyledComponentIcon, name: "styled-component" },
   { icon: TailwindIcon, name: "Tailwind" },
