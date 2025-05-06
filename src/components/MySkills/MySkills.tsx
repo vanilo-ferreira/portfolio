@@ -4,41 +4,7 @@ import { useState, useEffect } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-import HTMLIcon from "../../assets/icons/htmlIcon.svg";
-import CSSIcon from "../../assets/icons/cssIcon.svg";
-import JSIcon from "../../assets/icons/jsIcon.svg";
-import TailwindIcon from "../../assets/icons/tailwindIcon.svg";
-import ReactIcon from "../../assets/icons/reactIcon.svg";
-import NextIcon from "../../assets/icons/nextjsIcon.svg";
-import TypeScriptIcon from "../../assets/icons/typescriptIcon.svg";
-import AngularIcon from "../../assets/icons/angularJsIcon.svg";
-import NodeJsIcon from "../../assets/icons/nodeJsIcon.svg";
-import MaterialUiIcon from "../../assets/icons/materialUiIcon.svg";
-import StyledComponentIcon from "../../assets/icons/styledComponentsIcon.svg";
-import ViteIcon from "../../assets/icons/viteIcon.svg";
-import FigmaIcon from "../../assets/icons/figmaIcon.svg";
-import GitIcon from "../../assets/icons/gitIcon.svg";
-import PostgresSQLIcon from "../../assets/icons/postgresqlIcon.svg";
-import PythonIcon from "../../assets/icons/pythonIcon.svg";
-
-const skills = [
-  { icon: AngularIcon, name: "Angular" },
-  { icon: CSSIcon, name: "CSS" },
-  { icon: JSIcon, name: "JavaSacript" },
-  { icon: FigmaIcon, name: "Figma" },
-  { icon: GitIcon, name: "Git" },
-  { icon: HTMLIcon, name: "HTML" },
-  { icon: MaterialUiIcon, name: "Material-UI" },
-  { icon: NextIcon, name: "Next.js" },
-  { icon: NodeJsIcon, name: "Node.js" },
-  { icon: PostgresSQLIcon, name: "PostgresSQL" },
-  { icon: PythonIcon, name: "Python" },
-  { icon: ReactIcon, name: "React" },
-  { icon: StyledComponentIcon, name: "styled-component" },
-  { icon: TailwindIcon, name: "Tailwind" },
-  { icon: TypeScriptIcon, name: "TypesScript" },
-  { icon: ViteIcon, name: "Vite" },
-];
+import { skills } from '../../data/skylls';
 
 export function MySkills() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -81,9 +47,9 @@ export function MySkills() {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         />
-        {getVisibleSlides().map((skill, index) => (
+        {getVisibleSlides().map((skill) => (
           <div
-            key={index}
+            key={skill.id}
             className="skillCard"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
