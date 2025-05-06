@@ -3,7 +3,7 @@ import './style.css';
 import { useState } from 'react';
 import { Modal } from '../Modal/Modal';
 
-import { projects } from '../../data/data';
+import { projects } from '../../data/projects';
 import { IProjects } from '../../interfaces/IProjects';
 
 export function Projects() {
