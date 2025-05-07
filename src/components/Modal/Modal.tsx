@@ -42,9 +42,11 @@ export function Modal({ isOpen, setOpen, title, subtitle, description, deploy, g
                         <p className='projectSubtitle'>{subtitle}</p>
                         <p className='projectDescription'>{description}</p>
                         <div className='containerButtons'>
-                            <a href={deploy} target='blank'>
-                                <button>Acessar projeto</button>
-                            </a>
+                            {
+                                deploy && <a href={deploy} target='blank'>
+                                    <button>Deploy do projeto</button>
+                                </a>
+                            }
                             <a href={githubLink} target='blank'>
                                 <button>Acessar repositório</button>
                             </a>
@@ -53,7 +55,7 @@ export function Modal({ isOpen, setOpen, title, subtitle, description, deploy, g
                             <p className='technologies'>Tecnologias utilizadas:</p>
                             <div className='containerTechnologies'>
                                 {technologies.map((technology) => (
-                                    <img src={technology.image} alt={`Technology icon ${technology.technology}`}/>
+                                    <img src={technology.image} alt={`Technology icon ${technology.technology}`} />
                                 ))}
                             </div>
                         </div>
