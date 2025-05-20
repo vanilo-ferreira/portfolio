@@ -1,50 +1,91 @@
-# React + TypeScript + Vite
+# Portfólio Pessoal 💼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo de apresentar e organizar os projetos que venho construindo ao longo dos anos. Embora já funcional, o portfólio ainda passará por atualizações constantes, com o intuito de incorporar melhorias como responsividade aprimorada, opção de alternância de tema (claro/escuro), uma página dedicada para listar todos os projetos desenvolvidos — além da seção atual com destaques — e outras funcionalidades que agreguem valor à experiência do usuário. O projeto também serve como uma vitrine das minhas habilidades técnicas, dos serviços que ofereço e como canal de contato direto com possíveis parceiros ou contratantes.
 
-Currently, two official plugins are available:
+## 🎯 Objetivos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Armazenar e apresentar projetos que desenvolvi ao longo da minha trajetória.
+- Criar um canal centralizado para divulgar meus serviços e experiências.
+- Facilitar a comunicação com interessados por meio de um formulário de contato funcional.
+- Compartilhar informações sobre as tecnologias que domino e com as quais trabalho frequentemente.
 
-## Expanding the ESLint configuration
+## 🧭 Seções do Portfólio
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Sobre Mim
 
-- Configure the top-level `parserOptions` property like this:
+Uma breve apresentação pessoal, incluindo um resumo da minha trajetória e motivações como desenvolvedor.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<figure>
+  <img align="center" alt="aboutMe" src="./doc/assets/aboutMe.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 1.
+    </span>
+  Topo do Páginna e Seção Sobre Mim.</figcaption>
+</figure>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Projetos
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Apresentação de projetos em destaque que desenvolvi, com foco nas soluções e tecnologias utilizadas.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<figure>
+  <img align="center" alt="projects" src="./doc/assets/projects.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 2.
+    </span>
+Seção Projetos.</figcaption>
+</figure>
+
+### 3. Serviços
+
+Espaço dedicado para listar os principais serviços que ofereço, como desenvolvimento web, Criação de API, entre outros.
+
+<figure>
+  <img align="center" alt="Types Services" src="./doc/assets/typesServices.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 3.
+    </span>
+Seção Serviços.</figcaption>
+</figure>
+
+### 4. Tecnologias
+
+Lista das tecnologias que possuo conhecimento.
+
+<figure>
+  <img align="center" alt="My Skills" src="./doc/assets/skylls.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 4.
+    </span>
+Seção Tecnologias.</figcaption>
+</figure>
+
+### 5. Contato
+
+Um formulário funcional onde visitantes podem enviar mensagens diretamente para mim. As mensagens são processadas pelo back-end Node.js, utilizando a biblioteca Nodemailer para envio por e-mail.
+
+<figure>
+  <img align="center" alt="Contact" src="./doc/assets/contact.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 5.
+    </span>
+Formulário para Contato.</figcaption>
+</figure>
+
+## 🚀 Tecnologias Utilizadas
+
+### 🖥️ Front-end
+
+- **React** – Biblioteca JavaScript para construção de interfaces modernas e reativas.
+- **TypeScript** – Superset do JavaScript que adiciona tipagem estática ao código.
+- **Material-UI (MUI)** – Biblioteca de componentes React com design baseado no Material Design.
+- **Vite** – Ferramenta de build extremamente rápida, utilizada para desenvolvimento e empacotamento do front-end.
+
+### 🔧 Back-end
+
+- **Node.js** – Plataforma de desenvolvimento back-end baseada em JavaScri;
+- **Nodemailer** – Biblioteca utilizada para envio de e-mails através do formulário de contato.
+
+## 📦 Deploy do Projeto
+
+O deploy da aplicação foi realizado na plataforma [Vercel](https://vercel.com/).
+E poderá ser acompanhado através do seguinte link: [Vanilo Ferreira - Portfólio](https://portfolio-one-flame-10.vercel.app/).
