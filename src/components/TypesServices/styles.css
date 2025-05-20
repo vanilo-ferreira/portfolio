@@ -1,34 +1,34 @@
 #services {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 .containerServices {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .serviceCard {
-    width: 290px;
-    height: 180px;
-    background-color: #333333;
-    border-bottom: 4px solid #00DF5E;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
+  width: 290px;
+  height: 180px;
+  background-color: #333333;
+  border-bottom: 4px solid #00df5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .serviceCard:hover {
-    border-bottom: 4px solid #FFFFFF;
+  border-bottom: 4px solid #ffffff;
 }
 
 .serviceCard img {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 
 .serviceCard p {
-    font-size: 32px;
-    color: #828282;
+  font-size: 32px;
+  color: #828282;
 }
